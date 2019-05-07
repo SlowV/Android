@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UpdateUserActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <EditText
+        android:id="@+id/edUserUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username update"
+        android:inputType="text"
+        android:autofillHints="Username" />
+
+    <Spinner
+        android:id="@+id/spGenderUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/edDescriptionUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textMultiLine"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:hint="Description update..."
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="description" />
+
+
+    <Button
+        android:id="@+id/btUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:layout_gravity="center"/>
+</LinearLayout>
